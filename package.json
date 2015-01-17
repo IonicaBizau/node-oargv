@@ -1,7 +1,7 @@
 {
   "name": "oargv",
   "version": "1.0.0",
-  "description": "Stringifies objects into bash commands.;w",
+  "description": "Turns an object into a bash command.",
   "main": "lib/index.js",
   "directories": {
     "test": "test"
