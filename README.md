@@ -13,7 +13,7 @@ $ npm install oargv
 
 ```js
 // Dependencies
-var OArgv = require("../lib");
+var OArgv = require("oargv");
 
 // Output
 console.log(OArgv({
