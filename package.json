@@ -1,0 +1,28 @@
+{
+  "name": "oargv",
+  "version": "1.0.0",
+  "description": "Stringifies objects into bash commands.;w",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IonicaBizau/node-oargv.git"
+  },
+  "keywords": [
+    "oargv",
+    "arguments",
+    "commands",
+    "bash"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/node-oargv/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/node-oargv"
+}
