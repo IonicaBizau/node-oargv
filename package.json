@@ -19,6 +19,9 @@
     "commands",
     "bash"
   ],
+  "dependencies": {
+      "ul": "1.1.0"
+  },
   "author": "Ionică Bizău <bizauionica@gmail.com>",
   "license": "MIT",
   "bugs": {
