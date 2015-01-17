@@ -22,7 +22,7 @@ console.log(OArgv({
 }, "zip"));
 ```
 
-Output: `zip "foo.zip" "foo"`
+Output: `zip -r "foo.zip" "foo"`
 
 ## Documentation
 ### `OArgv(options, prgm)`
