@@ -7,6 +7,7 @@ var tests = [
   , [{ d: "http://ionicabizau.net", tt: true, size: "600x800" }, "bat"]
   , [{ escaping: "She said: \"Hello World\"!" }, "foo"]
   , [{ noCommand: "foo", b: true }]
+  , [{ __: "=", custom: "Separator"}, "foo"]
 ];
 
 // Run tests
