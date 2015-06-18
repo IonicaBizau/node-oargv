@@ -1,9 +1,10 @@
 {
   "name": "oargv",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Turns an object into a bash command.",
   "main": "lib/index.js",
   "directories": {
+    "example": "example",
     "test": "test"
   },
   "scripts": {
@@ -23,9 +24,12 @@
     "ul": "1.1.0"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com>",
-  "license": "MIT",
+  "license": "KINDLY",
   "bugs": {
     "url": "https://github.com/IonicaBizau/node-oargv/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/node-oargv"
+  "homepage": "https://github.com/IonicaBizau/node-oargv",
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  }
 }
