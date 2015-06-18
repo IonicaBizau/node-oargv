@@ -13,7 +13,7 @@ console.log(OArgv({
   , tt: true
   , size: "600x800"
 }, "bat"));
-// => bat -d "http://ionicabizau.net" --tt -size "600x800"
+// => bat -d "http://ionicabizau.net" --tt --size "600x800"
 
 
 console.log(OArgv({

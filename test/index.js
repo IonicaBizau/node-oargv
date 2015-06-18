@@ -16,7 +16,7 @@ it("should support boolean args", function (cb) {
         d: "http://ionicabizau.net"
       , tt: true
       , size: "600x800"
-    }, "bat"), "bat -d \"http://ionicabizau.net\" --tt -size \"600x800\"");
+    }, "bat"), "bat -d \"http://ionicabizau.net\" --tt --size \"600x800\"");
     cb();
 });
 
@@ -40,4 +40,5 @@ it("should support custom separators", function (cb) {
         __: "=",
         custom: "Separator"
     }, "foo"), "foo --custom=\"Separator\"")
+    cb();
 });
