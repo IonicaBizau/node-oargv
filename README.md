@@ -13,7 +13,7 @@
 <!-- * * * Thanks! * * *                                                    -->
 <!---------------------------------------------------------------------------->
 
-![oargv](http://i.imgur.com/TgmKSGy.png)
+[![oargv](http://i.imgur.com/TgmKSGy.png)](#)
 
 # oargv [![Donate now][donate-now]][paypal-donations]
 
@@ -34,50 +34,53 @@ var OArgv = require("oargv");
 console.log(OArgv({
     r: true
   , _: ["target.zip", "somedir"]
-}, "zip"));
-// => zip -r "target.zip" "somedir"
+}, "zip", true));
+// => zip "-r" "target.zip" "somedir"
 
 console.log(OArgv({
     d: "http://ionicabizau.net"
   , tt: true
   , size: "600x800"
-}, "bat"));
-// => bat -d "http://ionicabizau.net" --tt --size "600x800"
+}, "bat", true));
+// => bat "-d" "http://ionicabizau.net" "--tt" "--size" "600x800"
 
 console.log(OArgv({
     escaping: "She said: \"Hello World\"!"
-}, "foo"));
-// => foo --escaping "She said: \"Hello World\"!"
+}, "foo", true));
+// => foo "--escaping" "She said: \"Hello World\"!"
 
 console.log(OArgv({
-    noCommand: "foo",
-    b: true
+    noCommand: "foo"
+  , b: true
 }));
-// => --noCommand "foo" -b
+// => [ '--noCommand', 'foo', '-b' ]
 
 console.log(OArgv({
     __: "=",
     custom: "Separator"
 }, "foo"));
-// => foo --custom="Separator"
-
+// => [ '--custom="Separator"' ]
 ```
 
 ## Documentation
 
-### `OArgv(options, prgm)`
+### `OArgv(options, prgm, stringify)`
 Stringifies the options, building a command.
 
 #### Params
 - **Object** `options`: The options that should be stringified. If it contains the `_` field, then this should be an `Array` of strings, that representing values
 that will be added at the end of the command. The `__` field is the separator (default: `" "`).
 - **String** `prgm`: The program that executes the command (default: `""`).
+- **Boolean** `stringify`: If `true`, the result array will be stringified (default: `false`).
 
 #### Return
-- **String** The stringified arguments.
+- **String|Array** The stringified arguments (if `stringify` is `true`) or the array of arguments.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
+
+## Who uses this
+If you are using this library in one of your projects, add it in this list. :sparkles:
 
 ## License
 [KINDLY][license] © [Ionică Bizău][website]–The [LICENSE](/LICENSE) file contains
@@ -88,4 +91,4 @@ a copy of the license.
 [website]: http://ionicabizau.net
 [docs]: /DOCUMENTATION.md
 [paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MG98D7NPFZ3MG
-[donate-now]: http://i.imgur.com/jioicaN.png
+[donate-now]: http://i.imgur.com/6cMbHOC.png
