@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:IonicaBizau/node-oargv.git"
+    "url": "git+ssh://git@github.com/IonicaBizau/node-oargv.git"
   },
   "keywords": [
     "oargv",
@@ -20,9 +20,6 @@
     "commands",
     "bash"
   ],
-  "dependencies": {
-    "ul": "5.0.0"
-  },
   "author": "Ionică Bizău <bizauionica@gmail.com>",
   "license": "KINDLY",
   "bugs": {
@@ -34,5 +31,9 @@
   },
   "blah": {
     "h_img": "http://i.imgur.com/TgmKSGy.png"
+  },
+  "dependencies": {
+    "iterate-object": "^1.1.0",
+    "ul": "^5.0.0"
   }
 }
