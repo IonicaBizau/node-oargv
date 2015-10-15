@@ -7,7 +7,6 @@ console.log(OArgv({
 }, "zip", true));
 // => zip "-r" "target.zip" "somedir"
 
-
 console.log(OArgv({
     d: "http://ionicabizau.net"
   , tt: true
@@ -15,12 +14,10 @@ console.log(OArgv({
 }, "bat", true));
 // => bat "-d" "http://ionicabizau.net" "--tt" "--size" "600x800"
 
-
 console.log(OArgv({
     escaping: "She said: \"Hello World\"!"
 }, "foo", true));
 // => foo "--escaping" "She said: \"Hello World\"!"
-
 
 console.log(OArgv({
     noCommand: "foo"
@@ -32,20 +29,20 @@ console.log(OArgv({
     __: "="
   , custom: "Separator"
 }, "foo"));
-// => [ '--custom="Separator"' ]
+// => [ '--custom=Separator' ]
 
 console.log(OArgv({
     author: ["foo@bar.com", "bar@foo.com"]
 }));
-// => ["--author", "foo@bar.com", "--author", "bar@foo.com"]
+// => [ '--author', 'foo@bar.com', '--author', 'bar@foo.com' ]
 
 console.log(OArgv({
     author: ["foo@bar.com", "bar@foo.com"]
 }, true));
-// => "\"--author\" \"foo@bar.com\" \"--author\" \"bar@foo.com\""
+// => "--author" "foo@bar.com" "--author" "bar@foo.com"
 
 console.log(OArgv({
     author: ["foo@bar.com", "bar@foo.com"]
   , __: "="
 }, true));
-// => "--author=\"foo@bar.com\"" "--author=\"bar@foo.com\""
+// => "--author=foo@bar.com" "--author=bar@foo.com"
