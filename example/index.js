@@ -29,7 +29,7 @@ console.log(OArgv({
     __: "="
   , custom: "Separator"
 }, "foo"));
-// => [ '--custom=Separator' ]
+// => [ 'foo', '--custom=Separator' ]
 
 console.log(OArgv({
     author: ["foo@bar.com", "bar@foo.com"]
