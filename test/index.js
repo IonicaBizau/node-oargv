@@ -42,3 +42,25 @@ it("should support custom separators", function (cb) {
     }), ["--custom=\"Separator\""])
     cb();
 });
+
+it("should support arrays and duplicate the args", function (cb) {
+    Assert.deepEqual(OArgv({
+        author: ["foo@bar.com", "bar@foo.com"]
+    }), ["--author", "foo@bar.com", "--author", "bar@foo.com"])
+    cb();
+});
+
+it("should support arrays and custom separators", function (cb) {
+    Assert.deepEqual(OArgv({
+        author: ["foo@bar.com", "bar@foo.com"]
+      , __: "="
+    }), ["--author=\"foo@bar.com\"", "--author=\"bar@foo.com\""])
+    cb();
+});
+
+it("should support arrays and duplicate the args and then stringify the result", function (cb) {
+    Assert.deepEqual(OArgv({
+        author: ["foo@bar.com", "bar@foo.com"]
+    }, true), "\"--author\" \"foo@bar.com\" \"--author\" \"bar@foo.com\"")
+    cb();
+});
