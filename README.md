@@ -56,10 +56,26 @@ console.log(OArgv({
 // => [ '--noCommand', 'foo', '-b' ]
 
 console.log(OArgv({
-    __: "=",
-    custom: "Separator"
+    __: "="
+  , custom: "Separator"
 }, "foo"));
 // => [ '--custom="Separator"' ]
+
+console.log(OArgv({
+    author: ["foo@bar.com", "bar@foo.com"]
+}));
+// => ["--author", "foo@bar.com", "--author", "bar@foo.com"]
+
+console.log(OArgv({
+    author: ["foo@bar.com", "bar@foo.com"]
+}, true));
+// => "\"--author\" \"foo@bar.com\" \"--author\" \"bar@foo.com\""
+
+console.log(OArgv({
+    author: ["foo@bar.com", "bar@foo.com"]
+  , __: "="
+}, true));
+// => "--author=\"foo@bar.com\"" "--author=\"bar@foo.com\""
 ```
 
 ## Documentation
