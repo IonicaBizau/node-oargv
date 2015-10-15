@@ -58,6 +58,14 @@ it("should support arrays and custom separators", function (cb) {
     cb();
 });
 
+it("should support arrays and custom separators and exec", function (cb) {
+    Assert.deepEqual(OArgv({
+        author: ["foo@bar.com", "bar@foo.com", "Bob Smith"]
+      , __: "="
+    }, "log"), ["log", "--author=foo@bar.com", "--author=bar@foo.com", "--author=Bob Smith"])
+    cb();
+});
+
 it("should support arrays and duplicate the args and then stringify the result", function (cb) {
     Assert.deepEqual(OArgv({
         author: ["foo@bar.com", "bar@foo.com", "Bob Smith"]
@@ -70,5 +78,13 @@ it("should support arrays, stringify the result and escape args", function (cb) 
         author: ["foo@bar.com", "bar@foo.com", "Bob Smith"]
       , __: "="
     }, true), "\"--author=foo@bar.com\" \"--author=bar@foo.com\" \"--author=Bob Smith\"")
+    cb();
+});
+
+it("should support arrays with exec, stringify the result and escape args", function (cb) {
+    Assert.deepEqual(OArgv({
+        author: ["foo@bar.com", "bar@foo.com", "Bob Smith"]
+      , __: "="
+    }, "git log", true), "git log \"--author=foo@bar.com\" \"--author=bar@foo.com\" \"--author=Bob Smith\"")
     cb();
 });
