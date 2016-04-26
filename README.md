@@ -1,16 +1,20 @@
+
 [![oargv](http://i.imgur.com/TgmKSGy.png)](#)
 
 # oargv [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Travis](https://img.shields.io/travis/IonicaBizau/node-oargv.svg)](https://travis-ci.org/IonicaBizau/node-oargv/) [![Version](https://img.shields.io/npm/v/oargv.svg)](https://www.npmjs.com/package/oargv) [![Downloads](https://img.shields.io/npm/dt/oargv.svg)](https://www.npmjs.com/package/oargv) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Turns an object into a bash command.
 
-## Installation
+## :cloud: Installation
 
 ```sh
 $ npm i --save oargv
 ```
 
-## Example
+
+## :clipboard: Example
+
+
 
 ```js
 // Dependencies
@@ -63,7 +67,8 @@ console.log(OArgv({
 // => "--author=foo@bar.com" "--author=bar@foo.com"
 ```
 
-## Documentation
+## :memo: Documentation
+
 
 ### `OArgv(options, prgm, stringify)`
 Stringifies the options, building a command.
@@ -77,31 +82,29 @@ that will be added at the end of the command. The `__` field is the separator (d
 #### Return
 - **String|Array** The stringified arguments (if `stringify` is `true`) or the array of arguments.
 
-## How to contribute
+
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Where is this library used?
+## :dizzy: Where is this library used?
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
- - [`batjs`](https://github.com/IonicaBizau/batjs)
 
- - [`bloggify`](https://github.com/Bloggify/bloggify-tools)
+ - [`batjs`](https://github.com/IonicaBizau/batjs)—This is the NodeJS bridge for BAT -- A minimalist tool for building native desktop applications using WEB technologies.
+ - [`bloggify`](https://github.com/Bloggify/bloggify-tools)—A set of tools for Bloggify administration.
+ - [`cdnjs-importer`](https://github.com/cdnjs/cdnjs-importer)—Easy way to import a library into CDNJS.
+ - [`cobol`](https://github.com/IonicaBizau/node-cobol)—COBOL bridge for NodeJS which allows you to run COBOL code from NodeJS.
+ - [`electroner`](https://github.com/IonicaBizau/electroner#readme)—Start ElectronJS apps from Node.js.
+ - [`engine-tools`](https://github.com/jillix/engine-tools) (by jillix)—Engine Tools library and CLI app.
+ - [`git-package-json`](https://github.com/IonicaBizau/git-package-json#readme)—Get the package.json contents from git repositories.
+ - [`git-stats-importer`](https://github.com/IonicaBizau/git-stats-importer)—Imports your commits from a repository into git-stats history.
+ - [`gpm`](https://github.com/IonicaBizau/gpm)—npm + git = gpm - Install NPM packages and dependencies from git repositories.
+ - [`initial-commit-date`](https://github.com/IonicaBizau/initial-commit-date#readme)—Get the initial commit date of a git repository.
+ - [`share-term`](https://github.com/Share-Term/share-term#readme)—Share the terminal with your friends.
+ - [`spawn-npm`](https://github.com/IonicaBizau/spawn-npm#readme)—Run npm commands by creating child processes.
 
- - [`cdnjs-importer`](https://github.com/cdnjs/cdnjs-importer)
-
- - [`cobol`](https://github.com/IonicaBizau/node-cobol)
-
- - [`electroner`](https://github.com/IonicaBizau/electroner#readme)
-
- - [`engine-tools`](https://github.com/jillix/engine-tools) by jillix
-
- - [`git-stats-importer`](https://github.com/IonicaBizau/git-stats-importer)
-
- - [`gpm`](https://github.com/IonicaBizau/gpm)
-
- - [`share-term`](https://github.com/Share-Term/share-term#readme)
-
-## License
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
