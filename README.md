@@ -1,7 +1,9 @@
 
 [![oargv](http://i.imgur.com/TgmKSGy.png)](#)
 
-# oargv [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Travis](https://img.shields.io/travis/IonicaBizau/node-oargv.svg)](https://travis-ci.org/IonicaBizau/node-oargv/) [![Version](https://img.shields.io/npm/v/oargv.svg)](https://www.npmjs.com/package/oargv) [![Downloads](https://img.shields.io/npm/dt/oargv.svg)](https://www.npmjs.com/package/oargv) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+# oargv
+
+ [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Travis](https://img.shields.io/travis/IonicaBizau/node-oargv.svg)](https://travis-ci.org/IonicaBizau/node-oargv/) [![Version](https://img.shields.io/npm/v/oargv.svg)](https://www.npmjs.com/package/oargv) [![Downloads](https://img.shields.io/npm/dt/oargv.svg)](https://www.npmjs.com/package/oargv) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Turns an object into a bash command.
 
@@ -91,14 +93,17 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
 
+ - [`babel-it`](https://github.com/IonicaBizau/babel-it#readme)—Babelify your code before `npm publish`.
  - [`batjs`](https://github.com/IonicaBizau/batjs)—This is the NodeJS bridge for BAT -- A minimalist tool for building native desktop applications using WEB technologies.
  - [`bloggify`](https://github.com/Bloggify/bloggify-tools)—A set of tools for Bloggify administration.
  - [`cdnjs-importer`](https://github.com/cdnjs/cdnjs-importer)—Easy way to import a library into CDNJS.
  - [`cobol`](https://github.com/IonicaBizau/node-cobol)—COBOL bridge for NodeJS which allows you to run COBOL code from NodeJS.
  - [`electroner`](https://github.com/IonicaBizau/electroner#readme)—Start ElectronJS apps from Node.js.
  - [`engine-tools`](https://github.com/jillix/engine-tools) (by jillix)—Engine Tools library and CLI app.
+ - [`fortran`](https://github.com/IonicaBizau/node-fortran)—Fortran bridge for Node.js which allows you to run Fortran code from Node.js.
  - [`git-package-json`](https://github.com/IonicaBizau/git-package-json#readme)—Get the package.json contents from git repositories.
  - [`git-stats-importer`](https://github.com/IonicaBizau/git-stats-importer)—Imports your commits from a repository into git-stats history.
+ - [`git-status`](https://github.com/IonicaBizau/git-status#readme)—A git-status wrapper.
  - [`gpm`](https://github.com/IonicaBizau/gpm)—npm + git = gpm - Install NPM packages and dependencies from git repositories.
  - [`initial-commit-date`](https://github.com/IonicaBizau/initial-commit-date#readme)—Get the initial commit date of a git repository.
  - [`share-term`](https://github.com/Share-Term/share-term#readme)—Share the terminal with your friends.
