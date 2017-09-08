@@ -1,6 +1,6 @@
 {
   "name": "oargv",
-  "version": "3.4.7",
+  "version": "3.4.8",
   "description": "Turns an object into a bash command.",
   "main": "lib/index.js",
   "directories": {
@@ -46,6 +46,9 @@
     "resources/",
     "menu/",
     "cli.js",
-    "index.js"
+    "index.js",
+    "bloggify.js",
+    "bloggify.json",
+    "bloggify/"
   ]
 }
